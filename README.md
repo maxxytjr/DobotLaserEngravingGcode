@@ -41,4 +41,4 @@ The arguments are as follows:
   
 Running in the terminal:
 
-`python laser.py --port COM4 --width 100 --height 100 --startx 200 --starty 0 --gcode gcode.gcode
+`python laser.py --port COM4 --width 100 --height 100 --startx 200 --starty 0 --gcode gcode.gcode`
