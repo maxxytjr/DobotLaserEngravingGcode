@@ -17,15 +17,34 @@ If the user is willing to sacrifice quality over speed, the laser engraving proc
 
 # Setup Procedure
   * Download [Inkscape Portable](https://portableapps.com/apps/graphics_pictures/inkscape_portable)
+  
   * Follow the instructions [here](https://github.com/martymcguire/inkscape-unicorn) to download the Gcode extension
+  
   * Start the Inkscape software
+  
   * Open the image on the canvas
-  * Click on the image to make sure it is selected
+  
+  ![Inkscape](https://github.com/maxxytjr/DobotLaserEngravingGcode/blob/master/1.JPG)
+  
+  * Click on the image to make sure it is selected. Then go to *Path --> Trace Bitmap*
+  
+  ![Inkscape](https://github.com/maxxytjr/DobotLaserEngravingGcode/blob/master/2.JPG)
+  
   * Press 'OK' on the next window that pops up
+  
   * On the canvas, drag out the original image and you shall see the traced bitmap image.
+  
+  ![Inkscape](https://github.com/maxxytjr/DobotLaserEngravingGcode/blob/master/3.JPG)
+  
   * Delete the original image
+ 
   * Save as Gcode file
+  
+  ![Inkscape](https://github.com/maxxytjr/DobotLaserEngravingGcode/blob/master/4.JPG)
+  
   * Upload gcode file into same directory as the main python file
+  
+  
   
 # Running the Script
 
@@ -33,12 +52,19 @@ The script can be run from a shell terminal, and passing in the required argumen
 
 The arguments are as follows:
   * `port`: COM port linked to the Dobot Magician
+  
   * `width`: width (along robot y-axis) of the image in mm. Default value of 70.
+  
   * `height`: height (along robot x-axis) of the image in mm. Default value of 50.
+  
   * `startx`: robot x-coordinate of starting position. Default value of 250.
+  
   * `starty`: robot y-coordinate of starting position. Default value of 0.
+  
   * `gcode`: path to gcode file. Default value of 'gcode.gcode'.
   
-Running in the terminal:
+  
+  
+# Running in the terminal:
 
 `python laser.py --port COM4 --width 100 --height 100 --startx 200 --starty 0 --gcode gcode.gcode`
